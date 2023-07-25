@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/acercade','AcercadeController@index');
+Route::get('/posts', [PostController::class, 'index']);
+
